@@ -1,0 +1,669 @@
+/* Global Styles */
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+section
+{
+    width: 100%;
+}
+
+.red
+{
+    color: rgb(255, 0, 0);
+}
+
+.grey
+{
+    color: rgb(105, 105, 105);
+}
+
+.pb10
+{
+    padding-bottom: 10px;
+}
+
+.pb20
+{
+    padding-bottom: 20px;
+}
+
+.ptb5
+{
+    padding: 5px 0px;
+}
+
+.flextxtC
+{
+    align-self: center;
+    font-size: 14px;
+}
+
+.textcenter
+{
+    text-align: center;
+}
+
+.aclear
+{
+    text-decoration: none;
+    color: black;
+}
+
+.lsclr
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style: none;
+}
+
+.txt18
+{
+    font-size: 18px;
+}
+
+.mb15
+{
+    margin-bottom: 15px;
+}
+
+.justcenter
+{
+    display: flex;
+    justify-content: center;
+}
+
+.pageformat
+{
+    text-align: center;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fill
+{
+    min-height: 100vh;
+}
+
+.txtkg5
+{
+    font-weight: 500;
+}
+
+.txtkg6
+{
+    font-weight: 600;
+}
+
+.ltrspace
+{
+    letter-spacing: 2px;
+}
+
+.center 
+{
+    width: 97.20%;
+    height: auto;
+}
+
+.automl
+{
+    margin-left: auto;
+}
+
+.automr
+{
+    margin-right: auto;
+}
+
+.noborder
+{
+    border: none !important;
+}
+
+.borderbtm
+{
+    border-bottom: 1px solid black;
+}
+
+/* Navigation */
+
+nav
+{
+    border-bottom: rgb(255, 0, 0) solid 2px;
+}
+
+#logo
+{
+    box-sizing: border-box;
+    height: inherit;
+    margin: 7.5px 0px;
+    padding-left: 5px;
+}
+
+.mobilenav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-links
+{
+    display: none;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#menupop
+{
+    width: 23px;
+    height: 23px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: inherit;
+    padding-right: 15px;
+    outline: none;
+    box-sizing: unset;
+}
+
+#menupop img
+{
+    height: inherit;
+    width: inherit;
+}
+
+.menu-links a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.menu-links a:first-child
+{
+    padding-top: 0px;
+}
+
+.menu-links a:active, .menu-links a:hover, .menu-links a:focus
+{
+    color: rgb(255, 0, 0);
+}
+
+.show
+{
+    display: flex !important;
+}
+
+#back
+{
+    display: flex;
+    border: none;
+    background: none;
+    margin-left: auto;
+    outline: none;
+}
+
+#back img
+{
+    outline: none;
+}
+
+/* Footer */
+
+footer
+{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footerlay
+{
+    display: flex;
+    flex-direction: column;
+    border-top: rgb(255, 0, 0) solid 2px;
+    border-bottom: rgb(255, 0, 0) solid 2px;
+    padding: 15px 0px;
+}
+
+.footerlay p
+{
+    font-size: 13px;
+}
+
+.footercopy
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms a
+{
+    text-decoration: none;
+}
+
+.footercontact
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footercontact a, .footercopy a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#tollfree
+{
+    display: none;
+}
+
+/* Index */
+
+.homebanner
+{
+    width: 95.5%;
+    height: 40vh;
+    background-image: url('/static/imgs/home.jpg');
+    background-position: 5% 20%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grindexshrimp
+{
+    width: 70%;
+    height: 70px;
+    background-image: url('/static/imgs/grindex-logo2.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: contain;
+    margin: 15px auto;
+}
+
+.CPL
+{
+    width: 70%;
+    height: 70px;
+    background-image: url('/static/imgs/Claessen_Pumps_logo_200x57.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: contain;
+    margin: 15px auto;
+}
+
+/* Terms */
+
+/* Contact */
+
+.salesformat, .officeformat
+{
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+.salesformat p, .officeformat p
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.salesformat a, .officeformat a
+{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.salesformat p:first-child
+{
+    display: inline-block;
+}
+
+.contactgrid
+{
+    display: grid;
+    gap: 10px 0px;
+}
+
+.contactcard
+{
+    display: block;
+}
+
+.title
+{
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Careers */
+
+/* Grindex Pumps */
+
+
+#GPG
+{
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    font-weight: 900;
+    font-size: 18px;
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: all .2s ease-out;
+}
+
+#GPG:hover
+{
+    transform: scale(1.2);
+}
+
+.handslay
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.handslay img 
+{
+    width: 300px;
+    height: auto;
+}
+
+/* Grindex Pump Handbook */
+
+/* Screens 420px + */
+
+@media(min-width: 420px)
+{
+    .salesformat, .officeformat
+    {
+        width: 80%;
+    }
+}
+
+/* Screens 500px + */
+
+@media(min-width: 500px)
+{
+    /* Global */
+    .pageformat
+    {
+        padding: 0px 40px;
+        padding-bottom: 40px;
+        font-size: 18px;
+    }
+
+    /* Navigation */
+    
+    .menu-links
+    {
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+    #tollfree
+    {
+        display: block;
+    }
+
+    .footercopy, .footercontact
+    {
+        padding-bottom: 20px;
+    }
+
+    /* Index */
+    
+    
+
+    /* Contact */
+
+    #contact500
+    {
+        padding: 10px 0px;
+    }
+
+    .officeformat, .salesformat
+    {
+        width: 400px;
+    }
+
+}
+
+/* Screens 700px + */
+
+@media(min-width: 700px)
+{
+    /* Global */
+
+    .pageformat
+    {
+        padding: 0px 50px;
+        padding-bottom: 40px;
+        font-size: 18px;
+    }
+
+    /* Nav */
+
+    /* Contact */
+
+    .salesformat
+    {
+        padding-bottom: 40px;
+        width: 500px;
+    }
+
+    .title
+    {
+        font-size: 20px;
+    }
+
+    /* Handbook */
+    .handslay img 
+    {
+        width: 600px;
+        height: auto;
+    }
+}
+
+/* Screens 800px + */
+
+@media(min-width: 800px)
+{
+    /* Contact */
+
+    .salesformat
+    {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .contactgrid
+    {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+}
+
+/* Screens 900px + */
+
+@media(min-width: 900px)
+{
+    /* Navigation */
+
+    #menupop
+    {
+        display: none;
+    }
+
+    .navsplit
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-links
+    {
+        display: flex;
+        height: inherit;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .menu-links a
+    {
+        padding-top: 0px;
+        padding-right: 20px;
+    }
+
+    .noburger
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Footer */
+
+    .footercontact p, .footercopy p, .terms p
+    {
+        font-size: 14.5px;
+    }
+
+    /* Index */
+
+    .grindexshrimp
+    {
+        margin: 30px auto;
+    }
+
+    /* Pumps */
+
+    .pumplayout
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #back
+    {
+        display: none;
+    }
+    
+    .pumpmodels
+    {
+        width: 400px;
+    }
+
+    .sectionpumps
+    {
+        display: flex;
+        justify-content: start;
+    }
+
+    .plustoggle
+    {
+        display: none;
+    }
+
+    .pumpheader
+    {
+        justify-content: center;
+    }
+
+    .info
+    {
+        justify-content: flex-start;
+        border: 1.5px solid black;
+        border-left: 0px;
+        padding: 10px 0px;
+    }
+
+    .deskleft
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .deskleft img
+    {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    /* Desktop Pump Styles */
+
+    .deskcurve
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .specs
+    {
+        display: block;
+        width: 50%;
+    }
+
+    .pumpinfo
+    {
+        border-bottom: 0px;
+    }
+
+    .pumpinfo:last-child
+    {
+        border-bottom: 1.5px solid black;
+    }
+}

@@ -1,0 +1,18 @@
+
+<nav>
+    <div class="navsplit">
+        <div class="mobilenav">
+            <a class="justcenter" href="/">
+                <img id="logo" src=" {{ url_for('static', filename='imgs/Claessen_Pumps_logo_200x57.svg') }}" alt="Claessen Pumps Logo">
+            </a>
+            <button id="menupop">
+                <img src="{{ url_for('static', filename='imgs/burger.svg') }}" alt="Menu Button">
+            </button>
+        </div>
+        <div class="menu-links pb10">
+            <!-- <a class="pt0" href="{{ url_for('pumps')}}">Grindex Pumps</a> -->
+            <a href="{{ url_for('pumps') }}">Grindex Pump Handbook</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+    </div>
+</nav>
