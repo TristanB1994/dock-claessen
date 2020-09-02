@@ -4,5 +4,10 @@ $(document).ready(function() {
     $("#menupop").click(function() {
         $(".menu-links").toggleClass("show");
     });
+
+    // // Logo Swap
+    // $(window).on("load", function() {
+    //     $('#logo').addClass('logo-slide');
+    // })
 });
 
