@@ -312,10 +312,21 @@ footer
 .homebanner
 {
     width: 95%;
-    height: 40vh;
-    margin: 20px;
+    height: 50vh;
+    margin: 20px 0px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.scroll-banner
+{
+    display: flex;
+    height: inherit;
+}
+
+.scroll-banner img
+{
+    margin: auto 0px;
 }
 
 .grindexshrimp
