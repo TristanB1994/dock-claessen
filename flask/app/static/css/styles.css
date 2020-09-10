@@ -141,23 +141,23 @@ nav
     border-bottom: rgb(0, 148, 129) solid 2px;
 }
 
-/* #logo
+#logo
 {
     box-sizing: border-box;
     height: inherit;
     margin: 7.5px 0px;
     padding-left: 5px;
     display: block;
-} */
+    transition: 1.5s 0.5s;
+}
 
-/* .logo-slide
-{
-    transform: translate(-300px 0px);
-} */
+#logo.slideLeft{
+    transform: translateX(-250px);
+}
 
 #new_logo
 {
-    display: block;
+    display: none;
     transition-property: all;
     transition-duration: 3s;
     height: 50px;

@@ -1,3 +1,5 @@
+var logo = document.getElementById('logo');
+
 $(document).ready(function() {
 
     // Navigation Popup
@@ -5,9 +7,7 @@ $(document).ready(function() {
         $(".menu-links").toggleClass("show");
     });
 
-    // // Logo Swap
-    // $(window).on("load", function() {
-    //     $('#logo').addClass('logo-slide');
-    // })
+    logo.classList.add('slideLeft');
+
 });
 
