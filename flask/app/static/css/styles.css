@@ -247,6 +247,15 @@ nav
     outline: none;
 }
 
+/* Image Aspct Ratios */
+
+.audexPIC
+{
+    max-height: 667px;
+    max-width: 1806px;
+    margin: auto auto;
+}
+
 /* Footer */
 
 footer
@@ -322,11 +331,6 @@ footer
 {
     display: flex;
     height: inherit;
-}
-
-.scroll-banner img
-{
-    margin: auto 0px;
 }
 
 .grindexshrimp
