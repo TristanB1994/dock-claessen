@@ -1,5 +1,7 @@
 var logo = document.getElementById('logo');
 var logoTwo = document.getElementById('new_logo');
+var nav = document.getElementsByTagName('nav')[0];
+var foot = document.getElementsByClassName('footerlay')[0];
 
 $(document).ready(function() {
 
@@ -21,4 +23,6 @@ $(document).ready(function() {
 
 function newlogo(){
     logoTwo.classList.add('color');
+    nav.classList.add('blueborder')
+    foot.classList.add('Blue')
 }
