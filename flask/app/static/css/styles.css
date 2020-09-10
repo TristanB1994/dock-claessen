@@ -435,7 +435,9 @@ footer
     background-repeat: no-repeat;
     background-origin: content-box;
     background-size: contain;
-    margin: 15px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
     animation: fadeIn ease 2s;
 }
 
