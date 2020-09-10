@@ -13,15 +13,14 @@ $(document).ready(function() {
     logo.classList.add('slideLeft');
     $(logo).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", 
     function(event) {
-        
         $(this).remove();
-
         newlogo();
     });
 
 });
 
 function newlogo(){
+    // logoTwo.classList.add('color');
     logoTwo.classList.add('color');
     nav.classList.add('blueborder')
     foot.classList.add('Blue')

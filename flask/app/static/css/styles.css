@@ -174,15 +174,56 @@ nav
     width: 257px;
     padding-left: 5px;
     margin: 7.5px 0px;
-    transition: opacity 1s ease, display 0s;
+    /* transition: opacity 1s ease, display 0s;
     -moz-transition: opacity 1s ease, display 0s;
-    -webkit-transition: opacity 1s ease, display 0s;
+    -webkit-transition: opacity 1s ease, display 0s; */
+    animation: fadeIn ease 2s;
 }
 
 #new_logo.color
 {
     display: inline-block;
     opacity: 1;
+}
+
+.fade-in 
+{
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 20s;
+}
+
+@keyframes fadeIn 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+@-moz-keyframes fadeIn 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-webkit-keyframes fadeIn 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-o-keyframes fadeIn 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-ms-keyframes fadeIn 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 .mobilenav
