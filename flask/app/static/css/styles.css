@@ -144,25 +144,40 @@ nav
 #logo
 {
     box-sizing: border-box;
-    height: inherit;
+    height: 50px;
     margin: 7.5px 0px;
     padding-left: 5px;
     display: block;
     transition: 1.5s 0.5s;
 }
 
-#logo.slideLeft{
+#logo.slideLeft
+{
     transform: translateX(-250px);
+}
+
+.hide
+{
+    display: none !important;
 }
 
 #new_logo
 {
     display: none;
-    transition-property: all;
-    transition-duration: 3s;
+    opacity: 0;
     height: 50px;
     width: 257px;
-    margin: 5px 5px;
+    padding-left: 5px;
+    margin: 7.5px 0px;
+    transition: opacity 1s ease, display 0s;
+    -moz-transition: opacity 1s ease, display 0s;
+    -webkit-transition: opacity 1s ease, display 0s;
+}
+
+#new_logo.color
+{
+    display: inline-block;
+    opacity: 1;
 }
 
 .mobilenav

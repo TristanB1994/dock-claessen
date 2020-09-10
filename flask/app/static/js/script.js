@@ -1,4 +1,5 @@
 var logo = document.getElementById('logo');
+var logoTwo = document.getElementById('new_logo');
 
 $(document).ready(function() {
 
@@ -8,6 +9,16 @@ $(document).ready(function() {
     });
 
     logo.classList.add('slideLeft');
+    $(logo).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", 
+    function(event) {
+        
+        $(this).remove();
+
+        newlogo();
+    });
 
 });
 
+function newlogo(){
+    logoTwo.classList.add('color');
+}
