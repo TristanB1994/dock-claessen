@@ -383,15 +383,27 @@ footer
     margin-right: auto;
 }
 
-.scroll-banner
+.scroll-banner-1
 {
     display: flex;
     height: inherit;
 }
 
+.scroll-banner-2
+{
+    display: none;
+    text-align: center;
+}
+
+.scroll-banner-3
+{
+    display: none;
+    text-align: center;
+}
+
 .grindexshrimp
 {
-    width: 70%;
+    width: 300px;
     height: 70px;
     background-image: url('/static/imgs/grindex-logo2.png');
     background-position: 50% 50%;
@@ -406,7 +418,7 @@ footer
 .CPL
 {
     width: 70%;
-    height: 70px;
+    height: 54px;
     background-image: url('/static/imgs/Claessen_Pumps_logo.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -420,8 +432,8 @@ footer
 #cpl
 {
     display: none;
-    width: 360px;
-    height: 70px;
+    width: 280px;
+    height: 54.5px;
     background-image: url('/static/imgs/Claessen_Logo.png');
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -632,6 +644,12 @@ footer
         width: 650px;
         height: 250px;
         margin: auto;
+    }
+
+    #new_logo, #cpl
+    {
+        height: 82px;
+        width: 420px;
     }
 
     /* Contact */
