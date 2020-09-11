@@ -12,13 +12,11 @@ $(document).ready(function() {
         $(".menu-links").toggleClass("show");
     });
 
-    logo.classList.add('slideLeft');
-    $(logo).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", 
-    function(event) {
+    $(logo).one('animationend', function(event) {
         $(this).remove();
         cpl.remove();
         newlogo();
-    });
+    })
 
 });
 

@@ -153,13 +153,14 @@ nav
     margin: 7.5px 0px;
     padding-left: 5px;
     display: block;
-    transition: 1.5s 0.5s;
+    animation: fadeOut ease 2s 0.6s;
+    animation-fill-mode: forwards;
 }
 
-#logo.slideLeft
+/* #logo.slideLeft
 {
     transform: translateX(-250px);
-}
+} */
 
 .hide
 {
@@ -182,15 +183,6 @@ nav
     display: inline-block;
     opacity: 1;
 }
-
-/* .fade-in 
-{
-    animation: fadeIn ease 20s;
-    -webkit-animation: fadeIn ease 20s;
-    -moz-animation: fadeIn ease 20s;
-    -o-animation: fadeIn ease 20s;
-    -ms-animation: fadeIn ease 20s;
-} */
 
 @keyframes fadeIn 
 {
@@ -309,8 +301,8 @@ nav
 
 .audexPIC
 {
-    max-height: 667px;
-    max-width: 1806px;
+    height: 110px;
+    width: 300px;
     margin: auto auto;
 }
 
@@ -428,7 +420,7 @@ footer
 #cpl
 {
     display: none;
-    width: 70%;
+    width: 360px;
     height: 70px;
     background-image: url('/static/imgs/Claessen_Logo.png');
     background-position: 50% 50%;
@@ -637,8 +629,9 @@ footer
 
     .homebanner
     {
-        width: 600px;
-        height: 222px;
+        width: 650px;
+        height: 250px;
+        margin: auto;
     }
 
     /* Contact */
@@ -652,6 +645,14 @@ footer
     .title
     {
         font-size: 20px;
+    }
+
+    /* Home */
+    .audexPIC
+    {
+        height: 220px;
+        width: 600px;
+        margin: auto auto;
     }
 
     /* Handbook */
