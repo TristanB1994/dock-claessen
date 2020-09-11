@@ -153,7 +153,7 @@ nav
     margin: 7.5px 0px;
     padding-left: 5px;
     display: block;
-    animation: fadeOut ease 2s 0.6s;
+    animation: fadeOut ease 3s 3s;
     animation-fill-mode: forwards;
 }
 
@@ -175,7 +175,7 @@ nav
     width: 257px;
     padding-left: 5px;
     margin: 7.5px 0px;
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 3s;
 }
 
 #new_logo.color, #cpl.color
@@ -392,13 +392,39 @@ footer
 .scroll-banner-2
 {
     display: none;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-banner-2 h3
+{
+    font-size: 24px;
 }
 
 .scroll-banner-3
 {
     display: none;
     text-align: center;
+    height: inherit;
+    width: inherit;
+}
+
+.scroll-banner-3 div
+{
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr);
+    grid-template-rows: minmax(125px, 1fr) minmax(125px, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.brandcard img
+{
+    height: 125px;
+    width: 150px;
 }
 
 .grindexshrimp
@@ -425,7 +451,7 @@ footer
     background-origin: content-box;
     background-size: contain;
     margin: 15px auto;
-    animation: fadeOut ease 2s 0.6s;
+    animation: fadeOut ease 3s 3s;
     animation-fill-mode: forwards;
 }
 
@@ -442,7 +468,7 @@ footer
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 7px;
-    animation: fadeIn ease 2s;
+    animation: fadeIn ease 3s;
 }
 
 @keyframes fadeOut 
@@ -641,15 +667,21 @@ footer
 
     .homebanner
     {
-        width: 650px;
-        height: 250px;
+        width: 100%;
+        height: 400px;
         margin: auto;
     }
 
-    #new_logo, #cpl
+    #new_logo, #cpl, .CPL
     {
         height: 82px;
         width: 420px;
+    }
+
+    #logo
+    {
+        height: 82px;
+        margin: 7.5px auto;
     }
 
     /* Contact */
