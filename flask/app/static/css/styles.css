@@ -18,6 +18,11 @@ section
     color: rgb(255, 0, 0);
 }
 
+.blue
+{
+    color: rgb(0, 148, 129) !important;
+}
+
 .grey
 {
     color: rgb(105, 105, 105);
