@@ -32,13 +32,16 @@ $(document).ready(function() {
         $(".menu-links").toggleClass("show");
     });
 
+    // primary pageload trigger
     $(logo).one('animationend', function(event) {
         $(this).remove();
         if (cpl) {
             cpl.remove();
         };
+        // captures nav, foot, red, deets, GPG objects to render new styles
         newlogo();
     });
+    // triggers homepage animations on company logo
     if (cplnew) {
         $(cplnew).one('animationend', function(event) {
             bannerMsg1();
@@ -68,6 +71,7 @@ function newlogo(){
             };
         }
     };
+    // handbook page
     $('#GPG').css("background-color","rgb(0, 148, 129)");
 }
 
@@ -82,6 +86,5 @@ function bannerMsg1() {
 }
 
 function bannerMsg2() {
-    $(slide2).hide();
-    $(slide3).css('display','block');
+    console.log('slide3 triggered');
 };
