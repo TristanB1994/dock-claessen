@@ -69,6 +69,10 @@ function newlogo(){
     if (cplnew) {
         cplnew.classList.add('color');
     };
+    if (shrimp) {
+        $(shrimp).hide();
+        $(brandbanner).css('display','flex');
+    }
     // Contact page
     if (red) {
         for (var i = 0; i < red.length; i++) {
@@ -82,10 +86,6 @@ function newlogo(){
             };
         }
     };
-    if (shrimp) {
-        $(shrimp).hide();
-        $(brandbanner).show();
-    }
 
     // handbook page
     $('#GPG').css("background-color","rgb(0, 148, 129)");
