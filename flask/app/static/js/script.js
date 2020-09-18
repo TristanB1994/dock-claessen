@@ -25,6 +25,9 @@ if (slide3) {
     };
 }
 
+var shrimp = document.getElementsByClassName('grindexshrimp')[0];
+var brandbanner = document.getElementById('brandbanner');
+
 // Contact
 
 var red = document.getElementsByClassName('red');
@@ -79,6 +82,11 @@ function newlogo(){
             };
         }
     };
+    if (shrimp) {
+        $(shrimp).hide();
+        $(brandbanner).show();
+    }
+
     // handbook page
     $('#GPG').css("background-color","rgb(0, 148, 129)");
 }
@@ -103,7 +111,7 @@ function bannerMsg1() {
                         resolve();
                     }
                 }, interval)
-            }, 1)
+            }, 0.1)
             ));
     };
 };
