@@ -17,6 +17,14 @@ if (banner) {
     var slide3 = banner.getElementsByClassName('scroll-banner-3')[0];
 }
 
+if (slide3) {
+    var BrandSlides = []
+    var bannerSlideShow = document.getElementsByClassName('bannerSlideShow');
+    for (var i = 0; i < bannerSlideShow.length; i++) {
+        BrandSlides.push(bannerSlideShow[i]);
+    };
+}
+
 // Contact
 
 var red = document.getElementsByClassName('red');
@@ -80,11 +88,31 @@ function newlogo(){
 function bannerMsg1() {
     $(slide1).hide();
     $(slide2).css('display','flex');
-    setTimeout(function(){
-        bannerMsg2();
-    }, 2000);
-}
+    var interval = 3000;
+    bannerMsg2();
+    p = Promise.resolve();
+    for (let i=0; i<BrandSlides.length;i++){
+        p = p.then(_ => new Promise(resolve =>
+            setTimeout(function(){
+                bannerMsg3(i)
+                setTimeout(function(){
+                    if(i==6){
+                        resolve();
+                    } else {
+                        $(BrandSlides[i]).hide();
+                        resolve();
+                    }
+                }, interval)
+            }, 1)
+            ));
+    };
+};
 
 function bannerMsg2() {
-    console.log('slide3 triggered');
+    $(slide2).hide();
+    $(slide3).css('display', 'flex')   
+};
+
+function bannerMsg3(k) {
+    $(BrandSlides[k]).show();
 };
