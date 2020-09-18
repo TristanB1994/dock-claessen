@@ -118,7 +118,7 @@ function bannerMsg1() {
 
 function bannerMsg2() {
     $(slide2).hide();
-    $(slide3).css('display', 'flex')   
+    $(slide3).css('display', 'block')   
 };
 
 function bannerMsg3(k) {
