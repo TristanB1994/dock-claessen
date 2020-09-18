@@ -470,7 +470,7 @@ footer
 #brandbanner img 
 {
     width: 280px;
-    height: 54.5px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
