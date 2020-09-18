@@ -97,7 +97,9 @@ function bannerMsg1() {
     $(slide1).hide();
     $(slide2).css('display','flex');
     var interval = 3000;
-    bannerMsg2();
+    setTimeout(function(){
+        bannerMsg2();
+    }, interval)
     p = Promise.resolve();
     for (let i=0; i<BrandSlides.length;i++){
         p = p.then(_ => new Promise(resolve =>
