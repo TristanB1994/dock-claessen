@@ -436,9 +436,9 @@ footer
 .bannerSlideShow
 {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: none;
-    object-fit: contain;
+    object-fit: fill;
     margin: auto 0px;
 }
 

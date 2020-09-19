@@ -71,6 +71,7 @@ function newlogo(){
     // Homepage
     if (cplnew) {
         cplnew.classList.add('color');
+        $(slide1).hide();
     };
     if (shrimp) {
         $(shrimp).hide();
@@ -97,7 +98,6 @@ function newlogo(){
 // Banner slides
 
 function bannerMsg1() {
-    $(slide1).hide();
     $(slide2).css('display','flex');
     var interval = 3000;
     setTimeout(function(){
