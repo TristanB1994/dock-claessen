@@ -766,6 +766,40 @@ footer
         width: 600px;
         height: auto;
     }
+
+    #brandbanner {
+        grid-template-areas: 
+            "audex . slurrypro"
+            ". grindex ."
+            "gromatex . envirohub";
+        grid-template-columns: repeat(3, minmax(350px, 1fr));
+        height: max-content;
+    }
+
+    #audex
+    {
+        grid-area: audex;
+    }
+
+    #slurrypro
+    {
+        grid-area: slurrypro;
+    }
+
+    #grindexbrandlogo
+    {
+        grid-area: grindex;
+    }
+
+    #gromatexlogo
+    {
+        grid-area: gromatex;
+    }
+
+    #envirohublogo
+    {
+        grid-area: envirohub;
+    }
 }
 
 /* Screens 800px + */

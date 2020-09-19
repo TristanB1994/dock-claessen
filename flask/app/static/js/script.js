@@ -75,7 +75,7 @@ function newlogo(){
     };
     if (shrimp) {
         $(shrimp).hide();
-        $(brandbanner).css('display','flex');
+        $(brandbanner).css('display','grid');
     }
     // Contact page
     if (red) {
@@ -117,7 +117,7 @@ function bannerMsg2() {
                     console.log(i)
                     bannerMsg3(i)
                     setTimeout(function(){
-                        if(i==6){
+                        if(i==7){
                             resolve();
                         } else {
                             $(BrandSlides[i]).hide();
