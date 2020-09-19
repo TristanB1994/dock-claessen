@@ -428,14 +428,18 @@ footer
     height: 100%; 
 }
 
+.bannerSlideShow:first-of-type
+{
+    display: block;
+}
+
 .bannerSlideShow
 {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: none;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
+    object-fit: contain;
+    margin: auto 0px;
 }
 
 .bannerSlideShow img

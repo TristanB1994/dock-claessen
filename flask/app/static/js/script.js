@@ -36,6 +36,9 @@ var red = document.getElementsByClassName('red');
 
 var deets = document.getElementsByClassName('CTAs');
 
+// timer for slideshow
+var interval = 3000;
+
 $(document).ready(function() {
 
     // Navigation Popup
@@ -100,27 +103,33 @@ function bannerMsg1() {
     setTimeout(function(){
         bannerMsg2();
     }, interval)
-    p = Promise.resolve();
-    for (let i=0; i<BrandSlides.length;i++){
-        p = p.then(_ => new Promise(resolve =>
-            setTimeout(function(){
-                bannerMsg3(i)
-                setTimeout(function(){
-                    if(i==6){
-                        resolve();
-                    } else {
-                        $(BrandSlides[i]).hide();
-                        resolve();
-                    }
-                }, interval)
-            }, 0.1)
-            ));
-    };
 };
 
 function bannerMsg2() {
     $(slide2).hide();
-    $(slide3).css('display', 'block')   
+    $(slide3).css('display', 'block') 
+    var interval = 3000;
+    p = Promise.resolve();
+    if (window.innerHeight < 600) {
+        for (let i=0; i<BrandSlides.length;i++){
+            p = p.then(_ => new Promise(resolve =>
+                setTimeout(function(){
+                    console.log(i)
+                    bannerMsg3(i)
+                    setTimeout(function(){
+                        if(i==6){
+                            resolve();
+                        } else {
+                            $(BrandSlides[i]).hide();
+                            resolve();
+                        }
+                    }, interval)
+                }, 0.1)
+                ));
+        };
+    } else if (window.innerWidth >= 600) {
+        console.log('big')
+    };  
 };
 
 function bannerMsg3(k) {
