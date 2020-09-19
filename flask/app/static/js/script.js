@@ -129,6 +129,10 @@ function bannerMsg2() {
         };
     } else if (window.innerWidth >= 600) {
         console.log('big')
+        for (var i = 0;i < BrandSlides.length; i++) {
+            $(BrandSlides[i]).css('display','block')
+            console.log(i)
+        }
     };  
 };
 

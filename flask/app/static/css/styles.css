@@ -752,9 +752,12 @@ footer
 
     .container3
     {
+        margin-top: 10px;
         display: grid;
         width: 100%;
         height: 100%; 
+        grid-template-columns: repeat(4, minmax(350px, 1fr));
+        gap: 10px;
     }
 
     /* Handbook */
