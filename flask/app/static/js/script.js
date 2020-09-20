@@ -109,31 +109,23 @@ function bannerMsg2() {
     $(slide2).hide();
     $(slide3).css('display', 'block') 
     var interval = 3000;
-    p = Promise.resolve();
-    if (window.innerWidth < 900) {
-        for (let i=0; i<BrandSlides.length;i++){
-            p = p.then(_ => new Promise(resolve =>
+    p = Promise.resolve(); 
+    for (let i=0; i<BrandSlides.length;i++){
+        p = p.then(_ => new Promise(resolve =>
+            setTimeout(function(){
+                console.log(i)
+                bannerMsg3(i)
                 setTimeout(function(){
-                    console.log(i)
-                    bannerMsg3(i)
-                    setTimeout(function(){
-                        if(i==7){
-                            resolve();
-                        } else {
-                            $(BrandSlides[i]).hide();
-                            resolve();
-                        }
-                    }, interval)
-                }, 0.1)
-                ));
-        };
-    } else if (window.innerWidth >= 900) {
-        console.log('big')
-        for (var i = 0;i < BrandSlides.length; i++) {
-            $(BrandSlides[i]).css('display','block')
-            console.log(i)
-        }
-    };  
+                    if(i==7){
+                        resolve();
+                    } else {
+                        $(BrandSlides[i]).hide();
+                        resolve();
+                    }
+                }, interval)
+            }, 0.1)
+            ));
+    };
 };
 
 function bannerMsg3(k) {
