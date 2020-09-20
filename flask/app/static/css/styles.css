@@ -848,9 +848,9 @@ footer
 
     #brandbanner {
         grid-template-areas: 
-            "audex . slurrypro"
+            "audex . envirohub"
             ". grindex ."
-            "gromatex . envirohub";
+            "gromatex . slurrypro";
         grid-template-columns: repeat(3, minmax(350px, 1fr));
         height: max-content;
     }
