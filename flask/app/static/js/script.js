@@ -110,7 +110,7 @@ function bannerMsg2() {
     $(slide3).css('display', 'block') 
     var interval = 3000;
     p = Promise.resolve();
-    if (window.innerHeight < 600) {
+    if (window.innerWidth < 900) {
         for (let i=0; i<BrandSlides.length;i++){
             p = p.then(_ => new Promise(resolve =>
                 setTimeout(function(){
@@ -127,7 +127,7 @@ function bannerMsg2() {
                 }, 0.1)
                 ));
         };
-    } else if (window.innerWidth >= 600) {
+    } else if (window.innerWidth >= 900) {
         console.log('big')
         for (var i = 0;i < BrandSlides.length; i++) {
             $(BrandSlides[i]).css('display','block')
