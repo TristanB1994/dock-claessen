@@ -440,7 +440,9 @@ footer
     height: 100%;
     display: none;
     object-fit: fill;
-    margin: auto 0px;
+    margin: auto;
+    max-width: 600px;
+    max-height: 300px;
 }
 
 .bannerSlideShow img
