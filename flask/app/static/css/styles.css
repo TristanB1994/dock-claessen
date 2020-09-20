@@ -400,8 +400,8 @@ footer
 .scroll-banner-2
 {
     display: none;
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     text-align: center;
     align-items: center;
     justify-content: center;
