@@ -56,11 +56,11 @@ $(document).ready(function() {
         newlogo();
     });
     // triggers homepage animations on company logo
-    if (cplnew) {
-        $(cplnew).one('animationend', function(event) {
-            bannerMsg1();
-        });
-    };
+    // if (cplnew) {
+    //     $(cplnew).one('animationend', function(event) {
+    //         bannerMsg1();
+    //     });
+    // };
 });
 
 function newlogo(){
@@ -72,6 +72,7 @@ function newlogo(){
     if (cplnew) {
         cplnew.classList.add('color');
         $(slide1).hide();
+        bannerMsg1();
     };
     if (shrimp) {
         $(shrimp).hide();
@@ -116,7 +117,7 @@ function bannerMsg2() {
                 console.log(i)
                 bannerMsg3(i)
                 setTimeout(function(){
-                    if(i==8){
+                    if(i==9){
                         resolve();
                     } else {
                         $(BrandSlides[i]).hide();
