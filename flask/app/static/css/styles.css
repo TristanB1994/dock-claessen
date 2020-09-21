@@ -485,13 +485,20 @@ footer
 
 #shrimpy
 {
-    width: 260px !important;
-    height: 50px !important;
+    width: 210px !important;
 }
 
 #welcometocpl
 {
     letter-spacing: 2px;
+}
+
+#cplLogocontainer
+{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .CPL
@@ -838,20 +845,12 @@ footer
         margin: 30px auto;
     }
 
-    .container3
-    {
-        margin-top: 10px;
-        display: flex;
-        width: 100%;
-        height: 100%; 
-    }
-
     #brandbanner {
         grid-template-areas: 
             "audex . envirohub"
             ". grindex ."
             "gromatex . slurrypro";
-        grid-template-columns: repeat(3, minmax(350px, 1fr));
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
         height: max-content;
     }
 

@@ -109,7 +109,7 @@ function bannerMsg1() {
 function bannerMsg2() {
     $(slide2).hide();
     $(slide3).css('display', 'block') 
-    var interval = 3000;
+    var interval = 2500;
     p = Promise.resolve(); 
     for (let i=0; i<BrandSlides.length;i++){
         p = p.then(_ => new Promise(resolve =>
