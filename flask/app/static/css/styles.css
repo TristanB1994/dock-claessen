@@ -789,6 +789,9 @@ footer
     .contactgrid
     {
     grid-template-columns: repeat(3, minmax(250px, 1fr));
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     }
 }
 
