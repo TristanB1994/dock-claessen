@@ -852,6 +852,9 @@ footer
             "gromatex . slurrypro";
         grid-template-columns: repeat(3, minmax(280px, 1fr));
         height: max-content;
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #audex
