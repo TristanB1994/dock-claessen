@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Claessen Pumps Ontario
+{% endblock %}
+
+{% block content %}
+
+    <p>This is the brands template</p>
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            Audex Pump Handbook
+        </h3>
+        <p>
+            For more information on the Grindex product line, please review the pump handbook. If you have additional questions feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/pumpfront.PNG') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/GPH.pdf') }}" download="Great_Pump_Handbook">
+                <button id="GPG" type="button">
+                    Great Pump Handbook
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            Grometex Pump Handbook
+        </h3>
+        <p>
+            For more information on the Grindex product line, please review the pump handbook. If you have additional questions feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/pumpfront.PNG') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/GPH.pdf') }}" download="Great_Pump_Handbook">
+                <button id="GPG" type="button">
+                    Great Pump Handbook
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            Slurrypro Pump Handbook
+        </h3>
+        <p>
+            For more information on the Grindex product line, please review the pump handbook. If you have additional questions feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/pumpfront.PNG') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/GPH.pdf') }}" download="Great_Pump_Handbook">
+                <button id="GPG" type="button">
+                    Great Pump Handbook
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            Grindex Pump Handbook
+        </h3>
+        <p>
+            For more information on the Grindex product line, please review the pump handbook. If you have additional questions feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/pumpfront.PNG') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/GPH.pdf') }}" download="Great_Pump_Handbook">
+                <button id="GPG" type="button">
+                    Great Pump Handbook
+                </button>
+            </a>
+        </div>
+    </section>
+{% endblock %}
