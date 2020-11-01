@@ -18,7 +18,7 @@ def grindex():
     return render_template('handbook.html')
 
 @app.route('/brands')
-def brandspage():
+def brands():
     return render_template('brands.html')
 
 
