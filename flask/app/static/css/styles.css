@@ -25,7 +25,8 @@ showgrid
 
 .blue
 {
-    color: rgb(0, 148, 129) !important;
+    /* color: rgb(0, 148, 129) !important --envirohub green ; rgb(0 173 239) --audex blue*/
+    color: #57a639 !important; /* 7eba00, 00bb2d rgb(126,186,0) 57a639*/
 }
 
 .grey
@@ -46,6 +47,11 @@ showgrid
 .pb30
 {
     padding-bottom: 30px;
+}
+
+pt20
+{
+    padding-top: 20px;
 }
 
 .pt30
@@ -168,7 +174,7 @@ nav
 
 .blueborder
 {
-    border-bottom: rgb(0, 148, 129) solid 2px !important;
+    border-bottom: #57a639 solid 2px !important;
 }
 
 #logo
@@ -302,7 +308,7 @@ nav
 
 .menu-links a:active, .menu-links a:hover, .menu-links a:focus
 {
-    color: rgb(0, 148, 129);
+    color: #57a639;
 }
 
 .show
@@ -354,8 +360,8 @@ footer
 
 .footerlay.Blue
 {
-    border-bottom: rgb(0, 148, 129) solid 2px !important;
-    border-top: rgb(0, 148, 129) solid 2px !important;
+    border-bottom: #57a639 solid 2px !important;
+    border-top: #57a639 solid 2px !important;
 }
 
 .footerlay p
@@ -502,13 +508,18 @@ footer
     gap: 45px 0px;
 }
 
-#brandbanner img, #brandcard div img
+#brandbanner img, #brandcard div img, #envirobrand img
 {
     width: 280px;
     /* height: 54.5px; */
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#envirobrand
+{
+    padding-top: 20px;
 }
 
 #shrimpy
