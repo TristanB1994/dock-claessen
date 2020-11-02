@@ -93,7 +93,7 @@ function newlogo(){
     };
 
     // handbook page
-    $('#GPG').css("background-color","#57a639");
+    $('#GPG').css("background-color","#28a516");
 }
 
 // Banner slides

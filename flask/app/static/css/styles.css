@@ -25,8 +25,8 @@ showgrid
 
 .blue
 {
-    /* color: rgb(0, 148, 129) !important --envirohub green ; rgb(0 173 239) --audex blue*/
-    color: #57a639 !important; /* 7eba00, 00bb2d rgb(126,186,0) 57a639*/
+    /* color: rgb(0, 148, 129) !important --envirohub green ; rgb(0 173 239) --audex blue rel6018 61993b*/
+    color: #28a516 !important; /* 7eba00, 00bb2d rgb(126,186,0) 57a639 28a516 2bb218*/
 }
 
 .grey
@@ -174,7 +174,7 @@ nav
 
 .blueborder
 {
-    border-bottom: #57a639 solid 2px !important;
+    border-bottom: #28a516 solid 2px !important;
 }
 
 #logo
@@ -308,7 +308,7 @@ nav
 
 .menu-links a:active, .menu-links a:hover, .menu-links a:focus
 {
-    color: #57a639;
+    color: #28a516;
 }
 
 .show
@@ -360,8 +360,8 @@ footer
 
 .footerlay.Blue
 {
-    border-bottom: #57a639 solid 2px !important;
-    border-top: #57a639 solid 2px !important;
+    border-bottom: #28a516 solid 2px !important;
+    border-top: #28a516 solid 2px !important;
 }
 
 .footerlay p
