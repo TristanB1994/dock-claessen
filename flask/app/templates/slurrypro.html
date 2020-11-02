@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Claessen Pumps Ontario
+{% endblock %}
+
+{% block content %}
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            SlurryPro  
+        </h3>
+        <p>
+            For more information on the SlurryPro product line, please review the product <a class="red nounder" href="{{ url_for('static', filename='imgs/brochure/SlurryPro_Brochure_2019_Standard_Res.pdf') }}" download="SlurryPro_Brochure">brochure</a> below. If you have additional questions, feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/brochure_cover/SlurryPro_Brochure_Cover.png') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/brochure/SlurryPro_Brochure_2019_Standard_Res.pdf') }}" download="SlurryPro_Brochure">
+                <button id="GPG" type="button">
+                    SlurryPro Brochure
+                </button>
+            </a>
+        </div>
+    </section>
+
+{% endblock %}

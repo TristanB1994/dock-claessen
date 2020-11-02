@@ -48,35 +48,44 @@
                 <div class="CPL"></div> 
                 <div id="cpl"></div>
             </div>
-            <p class="pb10">
+            <p class="pb10 pt30">
                 Claessen Pumps has always maintained the highest level of quality and integrity in the pumping industry.
             </p>
             <p class="pb10">
                 We are a full service facility, ready to meet your needs in sales, service and rentals for the industrial, municipal, mining, construction and commercial markets.
             </p>
-            <p class="pb10">
+            <p class="pb10 pb30">
                 Claessen Pumps has been supplying Grindex electrical submersible pumps for over 44 years, since 1976.
             </p>
-            <p>
-                Introducing new lines & new solutions <!-- style link welcome too -->
+            <p class="pb30 red">
+                <strong>Introducing New Lines & New Solutions:</strong> <!-- style link welcome too -->
             </p>
-            <!-- Add new brands -->
             <div class="grindexshrimp"></div>
             <div id="brandbanner">
                 <div id="audex">
-                    <img src="{{ url_for('static', filename='imgs/audex.png') }}" alt="Audex indsutrial submersible pumps">
+                    <a href="/product/audex">
+                        <img src="{{ url_for('static', filename='imgs/audex.png') }}" alt="Audex indsutrial submersible pumps">
+                    </a>
                 </div>
                 <div id="slurrypro">
-                    <img src="{{ url_for('static', filename='imgs/slurrypro.png') }}" alt="Slurrypro lined Pumps">
+                    <a href="/product/slurrypro">
+                        <img src="{{ url_for('static', filename='imgs/slurrypro.png') }}" alt="Slurrypro lined Pumps">
+                    </a>    
                 </div>
                 <div id="grindexbrandlogo">
-                    <img id='shrimpy' src="{{ url_for('static', filename='imgs/grindex-logo2.png') }}" alt="">
+                    <a href="/product/grindex">
+                        <img id='shrimpy' src="{{ url_for('static', filename='imgs/grindex-logo2.png') }}" alt="">
+                    </a>
                 </div>
                 <div id="gromatexlogo">
-                    <img src="{{ url_for('static', filename='imgs/gromatex.png') }}" alt="Gromatex lined fittings">
+                    <a href="/product/gromatex">
+                        <img src="{{ url_for('static', filename='imgs/gromatex.png') }}" alt="Gromatex lined fittings">
+                    </a>
                 </div>
                 <div id="envirohublogo">
-                    <img src="{{ url_for('static', filename='imgs/envirohubS.png') }}" alt="Envirohub smart monitoring">
+                    <a href="/product/envirohub">
+                        <img src="{{ url_for('static', filename='imgs/envirohubS.png') }}" alt="Envirohub smart monitoring">
+                    </a>
                 </div>
             </div>
             <!-- Left justify shrimp -->

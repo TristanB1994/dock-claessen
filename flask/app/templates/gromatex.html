@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Claessen Pumps Ontario
+{% endblock %}
+
+{% block content %}
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            Gromatex
+        </h3>
+        <p>
+            For more information on the Gromatex product line, please review the product <a class="red nounder" href="{{ url_for('static', filename='imgs/brochure/Gromatex_Brochure_Final.pdf') }}" download="Gromatex_Brochure">brochure</a> below. If you have additional questions, feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/brochure_cover/Gromatex_Brochure_Cover.png') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/brochure/Gromatex_Brochure_Final.pdf') }}" download="Gromatex_Brochure">
+                <button id="GPG" type="button">
+                    Gromatex Brochure 
+                </button>
+            </a>
+        </div>
+    </section>
+
+{% endblock %}

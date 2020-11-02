@@ -13,16 +13,15 @@ def terms():
 def contact():
     return render_template("contact.html")
 
-@app.route('/grindex')
-def grindex():
-    return render_template('handbook.html')
-
 @app.route('/brands')
 def brands():
     return render_template('brands.html')
 
-
-
+@app.route('/product/<string:target>')
+def product(target):
+    addr = target+'.html'
+    print(addr)
+    return render_template(str(addr))
 
 if __name__ == "__main__":
     app.run()

@@ -13,6 +13,11 @@ section
     width: 100%;
 }
 
+showgrid
+{
+    display: grid !important;
+}
+
 .red
 {
     color: rgb(255, 0, 0);
@@ -38,6 +43,16 @@ section
     padding-bottom: 20px;
 }
 
+.pb30
+{
+    padding-bottom: 30px;
+}
+
+.pt30
+{
+    padding-top: 30px;
+}
+
 .ptb5
 {
     padding: 5px 0px;
@@ -58,6 +73,11 @@ section
 {
     text-decoration: none;
     color: black;
+}
+
+.nounder
+{
+    text-decoration: none;
 }
 
 .lsclr
@@ -178,7 +198,7 @@ nav
     opacity: 0;
     height: 50px;
     width: 257px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     margin: 7.5px 0px;
     animation: fadeIn ease 2s;
 }
@@ -461,10 +481,10 @@ footer
     background-size: contain;
     margin: 15px;
     margin-right: auto;
-    margin-left: 5px;
+    margin-left: auto;
 }
 
-#brandbanner
+#brandbanner, #brandcard
 {
     display: none;
     flex-direction: column;
@@ -474,7 +494,15 @@ footer
     align-items: center;
 }
 
-#brandbanner img 
+/* Brands logos */
+
+#brandcard
+{
+    display: grid;
+    gap: 45px 0px;
+}
+
+#brandbanner img, #brandcard div img
 {
     width: 280px;
     /* height: 54.5px; */
@@ -621,7 +649,8 @@ footer
     margin-top: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 0, 0);
-    font-weight: 900;
+    font-weight: 400;
+    font-family: revert;
     font-size: 18px;
     border-style: none;
     margin-top: 20px;
@@ -700,7 +729,8 @@ footer
 
     #contact500
     {
-        padding: 10px 0px;
+        padding-top: 40px;
+        padding-bottom: 0px;
     }
 
     .officeformat, .salesformat
@@ -742,6 +772,12 @@ footer
     {
         height: 82px;
         margin: 7.5px auto;
+        margin-left: 10px;
+    }
+
+    #new_logo
+    {
+        margin-left: 10px;
     }
 
     /* Contact */
@@ -848,7 +884,8 @@ footer
         margin: 30px auto;
     }
 
-    #brandbanner {
+    #brandbanner 
+    {
         grid-template-areas: 
             "audex . envirohub"
             ". grindex ."
@@ -966,6 +1003,16 @@ footer
     {
         border-bottom: 1.5px solid black;
     }
+
+    .salesformat p:first-of-type
+    {
+        font-size: 18px;
+    }
+
+    .salesformat p:nth-child(2)
+    {
+        font-size: 16px;
+    }
 }
 
 @media(min-width: 1200px)
@@ -973,5 +1020,10 @@ footer
     .container3
     {
         grid-template-columns: repeat(4, minmax(300px, 1fr));
+    }
+
+    .contactgrid
+    {
+        max-width: 1200px;
     }
 }
