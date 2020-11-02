@@ -29,6 +29,13 @@ showgrid
     color: #2ebf1a !important; /* 7eba00, 00bb2d rgb(126,186,0) 57a639 28a516 2bb218 rgb(46, 191, 26)*/
 }
 
+.bigger
+{
+    font-size: 21.06px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
 .grey
 {
     color: rgb(105, 105, 105);
