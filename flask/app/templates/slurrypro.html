@@ -11,11 +11,20 @@
             SlurryPro  
         </h3>
         <p>
-            For more information on the SlurryPro product line, please review the product <a class="red nounder" href="{{ url_for('static', filename='imgs/brochure/SlurryPro_Brochure_2019_Standard_Res.pdf') }}" download="SlurryPro_Brochure">brochure</a> below. If you have additional questions, feel free to contact us at your earliest convenience.
+            For more information on the SlurryPro product line, please review the product <a class="red nounder" href="{{ pdfPath }}" download="SlurryPro_Brochure">brochure</a> below. If you have additional questions, feel free to contact us at your earliest convenience.
         </p>
-        <div class="handslay">
-            <img src="{{ url_for('static', filename='imgs/brochure_cover/SlurryPro_Brochure_Cover.png') }}" alt="Front page of handbook">
-            <a href="{{ url_for('static', filename='imgs/brochure/SlurryPro_Brochure_2019_Standard_Res.pdf') }}" download="SlurryPro_Brochure">
+        <div id='my_pdf_viewer' class="handslay" data-target="{{ pdfPath }}">
+            <div id="canvas_container">
+                <canvas id="pdf_renderer"></canvas>
+            </div>
+        </div>
+        <div id="navigation_controls">
+            <button id="go_previous">Previous</button>
+            <input id="current_page" value="1" type="number"/>
+            <button id="go_next">Next</button>
+        </div>
+        <div>
+            <a href="{{ pdfPath }}" download="SlurryPro_Brochure">
                 <button id="GPG" type="button">
                     SlurryPro Brochure
                 </button>

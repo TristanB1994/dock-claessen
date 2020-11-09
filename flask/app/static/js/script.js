@@ -28,6 +28,84 @@ if (slide3) {
 var shrimp = document.getElementsByClassName('grindexshrimp')[0];
 var brandbanner = document.getElementById('brandbanner');
 
+// Pdf Presentation
+
+// loading pdf
+var pdfSource = document.getElementById('my_pdf_viewer');
+
+var pdfState = {
+    pdf: null,
+    currentPage: 1,
+    zoom: 1
+};
+
+function render() {
+    pdfState.pdf.getPage(pdfState.currentPage).then((page) => {
+        var canvas = document.getElementById('pdf_renderer');
+        var ctx = canvas.getContext('2d');
+        var viewport = page.getViewport(pdfState.zoom);
+        canvas.height= viewport.height;
+        canvas.width= viewport.width;
+        page.render({
+            canvasContext: ctx,
+            viewport: viewport
+        })
+    })
+}
+
+if (pdfSource) {
+
+    pdfPath = pdfSource.dataset['target'];
+
+    pdfjsLib.getDocument(pdfPath).then((pdf) => {
+        pdfState.pdf = pdf;
+        render();
+    })
+}
+
+// Page changes
+var backpage = document.getElementById('go_previous')
+
+if (backpage) {
+    backpage.addEventListener('click', (e) => {
+    if(pdfState.pdf == null || pdfState.currentPage == 1) return;
+    pdfState.currentPage -= 1;
+    document.getElementById('current_page').value = pdfState.currentPage;
+    render();
+    });
+};
+
+var nextpage = document.getElementById('go_next')
+
+if (nextpage) {
+    nextpage.addEventListener('click', (e) => {
+    if(pdfState.pdf == null || pdfState.currentPage >= pdfState.pdf._pdfInfo.numPages) return;
+    pdfState.currentPage += 1;
+    document.getElementById('current_page').value = pdfState.currentPage;
+    render();
+    });
+};
+
+var currentpage = document.getElementById('current_page')
+
+if (currentpage) {
+    currentpage.addEventListener('keypress', (e) => {
+    if(pdfState.pdf == null) return;
+    
+    var code = e.key || e.which
+    
+    if (code=='Enter'){
+        var desiredPage = document.getElementById('current_page').valueAsNumber;
+
+        if(desiredPage >= 1 && desiredPage<= pdfState.pdf._pdfInfo.numPages) {
+            pdfState.currentPage = desiredPage;
+            document.getElementById('current_page').value = desiredPage;
+            render();
+        } 
+    }
+    });
+};
+
 // Contact
 
 var red = document.getElementsByClassName('red');
@@ -132,3 +210,4 @@ function bannerMsg2() {
 function bannerMsg3(k) {
     $(BrandSlides[k]).show();
 };
+

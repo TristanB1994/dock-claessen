@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Claessen Pumps Ontario
+{% endblock %}
+
+{% block content %}
+
+    <section class="pageformat">
+        <h3 class="red pb10">
+            Grindex 
+        </h3>
+        <p>
+            For more information on the Grindex product line, please review the pump <a class="red nounder" href="{{ url_for('static', filename='imgs/GPH.pdf') }}" download="Great_Pump_Handbook">handbook</a> below. If you have additional questions, feel free to contact us at your earliest convenience.
+        </p>
+        <div class="handslay">
+            <img src="{{ url_for('static', filename='imgs/pumpfront.PNG') }}" alt="Front page of handbook">
+            <a href="{{ url_for('static', filename='imgs/GPH.pdf') }}" download="Great_Pump_Handbook">
+                <button id="GPG" type="button">
+                    pdf viewer
+                </button>
+            </a>
+        </div>
+    </section>
+
+{% endblock %}

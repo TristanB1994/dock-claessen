@@ -195,6 +195,19 @@ nav
     animation-fill-mode: forwards;
 }
 
+#brand-dropdown:hover #brand-subs
+{
+    display: flex;
+}
+
+#brand-subs
+{
+    display: none;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
 /* #logo.slideLeft
 {
     transform: translateX(-250px);
@@ -681,6 +694,8 @@ footer
     transform: scale(1.2);
 }
 
+/* PDF Styles */
+
 .handslay
 {
     display: flex;
@@ -690,11 +705,28 @@ footer
     margin-top: 20px;
 }
 
+#canvas_container
+{
+    min-width: 210px;
+    min-height: 297px;
+    overflow: auto;
+    background: #333;
+    text-align: center;
+    border: solid 3px;
+}
+
+#pdf_renderer
+{
+    width: 210px;
+    height: 297px;
+}
+
+/* 
 .handslay img 
 {
     width: 300px;
     height: auto;
-}
+} */
 
 /* Grindex Pump Handbook */
 

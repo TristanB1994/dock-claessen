@@ -20,8 +20,15 @@ def brands():
 @app.route('/product/<string:target>')
 def product(target):
     addr = target+'.html'
+    slug = 'imgs/brochure/'+target+'.pdf'
+    pdfPath = url_for('static', filename=slug)
     print(addr)
-    return render_template(str(addr))
+    print(pdfPath)
+    return render_template(str(addr), pdfPath=pdfPath)
+
+@app.route('/pdf')
+def pdf():
+    return render_template('pdf.html')
 
 if __name__ == "__main__":
     app.run()
