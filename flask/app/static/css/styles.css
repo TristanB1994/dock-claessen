@@ -866,6 +866,12 @@ footer
 {
     /* Contact */
 
+    #pdf_renderer
+    {  
+        width: 630px;
+        height: 891px;
+    }
+
     .salesformat
     {
         width: 90%;
