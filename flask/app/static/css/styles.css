@@ -152,6 +152,11 @@ pt20
     height: auto;
 }
 
+.mt-20
+{
+    margin-top: 20px;
+}
+
 .automl
 {
     margin-left: auto;
