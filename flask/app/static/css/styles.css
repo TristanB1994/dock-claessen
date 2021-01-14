@@ -200,9 +200,21 @@ nav
     animation-fill-mode: forwards;
 }
 
+#brand-dropdown
+{
+    display: flex;
+    flex-direction: column;
+}
+
 #brand-dropdown:hover #brand-subs
 {
     display: flex;
+}
+
+#brand-dropdown > a:first-child
+{
+    align-self: flex-end;
+    margin-bottom: 10px;
 }
 
 #brand-subs
@@ -211,6 +223,8 @@ nav
     position: relative;
     z-index: 1;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* #logo.slideLeft
