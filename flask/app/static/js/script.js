@@ -139,6 +139,19 @@ $(document).ready(function() {
     //         bannerMsg1();
     //     });
     // };
+
+    $("a[href='/brands']").on('click', function(e) {
+        if (screen.width < 900) {
+            e.preventDefault();
+            let sub = $("#brand-subs")
+            if (sub.css('display') == 'flex') {
+                sub.css('display','none')
+            } else {
+                sub.css('display','flex')
+            }
+        }
+    });
+    
 });
 
 function newlogo(){
@@ -192,7 +205,6 @@ function bannerMsg2() {
     for (let i=0; i<BrandSlides.length;i++){
         p = p.then(_ => new Promise(resolve =>
             setTimeout(function(){
-                console.log(i)
                 bannerMsg3(i)
                 setTimeout(function(){
                     if(i==9){

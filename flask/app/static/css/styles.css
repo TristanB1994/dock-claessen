@@ -950,6 +950,12 @@ footer
         flex-direction: row;
     }
 
+    #brand-subs a
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     #brand-dropdown > a:first-child
     {
         margin-bottom: 0px;
