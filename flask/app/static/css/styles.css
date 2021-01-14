@@ -936,13 +936,28 @@ footer
     .menu-links a
     {
         padding-top: 0px;
-        padding-right: 20px;
+        padding-right: 10px;
     }
 
     .noburger
     {
         display: flex;
         flex-direction: row;
+    }
+
+    #brand-subs
+    {
+        flex-direction: row;
+    }
+
+    #brand-dropdown > a:first-child
+    {
+        margin-bottom: 0px;
+    }
+
+    #brand-dropdown:hover > a:first-child
+    {
+        display: none;
     }
 
     /* Footer */
