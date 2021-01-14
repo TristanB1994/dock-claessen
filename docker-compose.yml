@@ -20,11 +20,24 @@ services:
         nginx:
                 build: ./nginx
                 container_name: nginx
-                restart: always
                 ports:
-                        - "80:80"
+                        - 80:80
+                        - 443:443
+                links:
+                        - flask
+                volumes:
+                        - /nginx/letsencrypt:/etc/letsencrypt
                 networks:
                         - app-network
+                          
+        # nginx:
+        #        build: ./nginx
+        #        container_name: nginx
+        #        restart: always
+        #        ports:
+        #                - "80:80"
+        #        networks:
+        #                - app-network
         
 networks:
         app-network:
