@@ -982,10 +982,14 @@ footer
 
     #brandbanner 
     {
-        grid-template-areas: 
+        /* grid-template-areas: 
             "audex . envirohub"
             ". grindex ."
-            "gromatex . slurrypro";
+            "gromatex . slurrypro"; */
+        grid-template-areas: 
+        ". . ."
+        "audex . grindex"
+        ". . .";
         grid-template-columns: repeat(3, minmax(280px, 1fr));
         height: max-content;
         max-width: 840px;
