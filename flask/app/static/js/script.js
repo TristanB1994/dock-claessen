@@ -207,7 +207,7 @@ function bannerMsg2() {
             setTimeout(function(){
                 bannerMsg3(i)
                 setTimeout(function(){
-                    if(i==9){
+                    if(i==7){
                         resolve();
                     } else {
                         $(BrandSlides[i]).hide();
