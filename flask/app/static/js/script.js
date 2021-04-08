@@ -14,6 +14,7 @@ var banner = document.getElementsByClassName('homebanner')[0];
 if (banner) {
     var slide1 = banner.getElementsByClassName('scroll-banner-1')[0];
     var slide2 = banner.getElementsByClassName('scroll-banner-2')[0];
+    
     var slide3 = banner.getElementsByClassName('scroll-banner-3')[0];
 }
 
@@ -125,6 +126,7 @@ $(document).ready(function() {
     });
 
     // primary pageload trigger
+    
     $(logo).one('animationend', function(event) {
         $(this).remove();
         if (cpl) {
@@ -133,6 +135,7 @@ $(document).ready(function() {
         // captures nav, foot, red, deets, GPG objects to render new styles
         newlogo();
     });
+    
     // triggers homepage animations on company logo
     // if (cplnew) {
     //     $(cplnew).one('animationend', function(event) {
@@ -160,15 +163,21 @@ function newlogo(){
     nav.classList.add('blueborder');
     foot.classList.add('Blue');
     // Homepage
+    
     if (cplnew) {
         cplnew.classList.add('color');
-        $(slide1).hide();
-        bannerMsg1();
-    };
-    if (shrimp) {
-        $(shrimp).hide();
-        $(brandbanner).css('display','grid');
     }
+
+    // if (cplnew) {
+    //     cplnew.classList.add('color');
+    //     $(slide1).hide();
+    //     bannerMsg1();
+    // };
+    // if (shrimp) {
+    //     $(shrimp).hide();
+    //     $(brandbanner).css('display','grid');
+    // }
+    
     // Contact page
     if (red) {
         for (var i = 0; i < red.length; i++) {
